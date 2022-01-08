@@ -1,0 +1,181 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-grey: #c5c5c5;
+    --text-input-field: #F7F7F7;
+    --secondary: lightgrey;
+    --success: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;    
+}
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+.cuadrado_mb, 
+.cuadrado,
+.triangulo_mb,
+.triangulo,
+.circulo_mb,
+.circulo{
+    width: 0;
+    height: 0;
+}
+.cuadrado_mb{
+    border: 25px solid var(--secondary);
+}
+.triangulo_mb{
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid var(--secondary);
+    border-left: 25px solid transparent;
+}
+.circulo_mb{
+    border: 25px solid var(--secondary);
+    border-radius: 100%;
+}
+.cuadrado{
+    border: 50px solid var(--secondary);
+}
+.triangulo{
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid var(--secondary);
+    border-left: 50px solid transparent;
+}
+.circulo{
+    border: 50px solid var(--secondary);
+    border-radius: 100%;
+}
+.main-header{
+    display:grid;
+    grid-template-rows: auto auto;
+    padding: 24px;
+    justify-items: center;
+    background: rgb(119,119,119);
+    background: linear-gradient(90deg, rgba(119,119,119,1) 0%, rgba(85,85,85,1) 35%, rgba(17,17,17,1) 100%);
+}
+.main-header .logo img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.main-header .title{
+    height: 100%;
+    padding: 24px;
+}
+.main-header h1, 
+.main-header h2{
+    text-align: center;
+    color: var(--white);
+}
+.selector{
+    width: 100%;
+    text-align: center;
+}
+.selector p{
+    display: none;
+}
+.selector-items{
+    display: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--text-input-field);
+    padding: 24px;
+}
+.figura{
+    padding: 24px;
+    border: 1px solid var(--very-light-grey);
+    border-radius: 16px;
+    box-shadow: 3px 3px rgba(102, 101, 101, 0.4);
+    box-sizing: border-box;
+    margin: 8px;
+    height: 100%;
+    background-color: #333;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.figura-datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.figura-calculos form{
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto auto ;
+
+}
+.figura-calculos .formTriangulo{
+    grid-template-columns: auto auto auto auto;
+}
+.figura-calculos .formIsosceles{
+    grid-template-columns: auto auto auto;
+}
+.figura-calculos input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 8px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid var(--very-light-grey);
+    background-color: var(--very-light-grey);
+    font-size: var(--lg);
+    font-weight: bold;
+}
+.figura-calculos form button{
+    margin-top: 4px;
+}
+.primary-button{
+    background-color: var(--success);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.resultadoCuadrado,
+.resultadoTriangulo,
+.resultadoCirculo{
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+    font-size: var(--lg);
+}
+@media all and (max-width:640px){
+    .selector p{
+        display: block;
+    }
+    .selector-items{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 16px;
+        justify-content: center;
+        margin-bottom: 24px;
+        padding: 24px;
+    }
+    .container{
+        grid-template-columns: auto;
+        gap: 24px;
+    }
+}
