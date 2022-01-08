@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas | Curso práctico de JavaScript en Platzi</title>
+    <link rel="stylesheet" href="./figuras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="./figuras.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo"><img src="https://images.pexels.com/photos/4965829/pexels-photo-4965829.jpeg?cs=srgb&dl=pexels-cottonbro-4965829.jpg&fm=jpg" alt=""></div>
+        <div class="title">
+            <h1>Figuras Geométricas</h1>
+            <h2>Calculadora para figuras geométricas</h2>
+            <img src="" alt="">
+        </div>
+    </header>
+    <section class="selector">
+        <p>Selecciona la figura que quieres calcular</p>
+        <div class="selector-items">
+            <a href="#anchorCuadrado"><div class="cuadrado_mb"></div></a>
+            <a href="#anchorTriangulo"><div class="triangulo_mb"></div></a>
+            <a href="#anchorCirculo"><div class="circulo_mb"></div></a>
+        </div>
+    </section>
+    <section class="container">
+        <article class="figura">
+            <div class="figura-datos">
+                <h3 id="anchorCuadrado">Cuadrado</h3>
+                <a href="/"><div class="cuadrado"></div></a>
+                <img src="" alt="">
+                <p>Cálculo del perímetro y el área de un cuadrado</p>
+                <p>Introduce las unidades en centímetros</p>
+            </div>
+            <div class="figura-calculos">
+                <form action="" class="formCuadrado">
+                    <label for="ladoCuadrado">Lado</label>
+                    <input type="number" id="ladoCuadrado">
+                </form>
+            </div>
+            <div class="buttons">
+                <button type="button" class="primary-button perimetro" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+                <button type="button" class="primary-button area" onclick="calcularAreaCuadrado()">Calcular área</button>
+            </div>
+            <div class="result">
+                <span id="resultadoCuadrado" class="resultadoCuadrado"> </span>
+            </div>
+        </article>
+        <article class="figura">
+            <div class="figura-datos">
+                <h3 id="anchorTriangulo">Triángulo</h3>
+                <div class="triangulo"></div>
+                <p>Cálculo del perímetro y el área de un triángulo</p>
+                <p>Introduce las unidades en centímetros</p>
+            </div>
+            <div class="figura-calculos">
+                <form action="" class="formTriangulo">
+                    <label for="ladoTriangulo1">1er lado</label>
+                    <label for="ladoTriangulo2">2o lado</label>
+                    <label for="baseTriangulo">Base</label>
+                    <label for="alturaTriangulo">Altura</label>
+                    <input type="number" id="ladoTriangulo1">
+                    <input type="number" id="baseTriangulo">
+                    <input type="number" id="ladoTriangulo2">
+                    <input type="number" id="alturaTriangulo">
+                </form>
+            </div>
+            <div class="buttons">
+                <button type="button" class="primary-button " onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
+                <button type="button" class="primary-button " onclick="calcularAreaTriangulo()">Calcular área</button>                
+             </div>
+             <div class="result">
+                 <span id="resultadoTriangulo" class="resultadoTriangulo" > </span>
+             </div>
+        </article>
+        <article class="figura">
+            <div class="figura-datos">
+                <h3 id="anchorCirculo">Circulo</h3>
+                <div class="circulo"></div>
+                <img src="" alt="">
+                <p>Cálculo del perímetro y el área de un Circulo</p>
+                <p>Introduce las unidades en centímetros</p>
+            </div>
+            <div class="figura-calculos">
+                <form action="" class="formCirculo">
+                    <label for="radioCirculo">Radio</label>
+                    <input type="number" id="radioCirculo">
+                </form>
+            </div>
+            <div class="buttons">
+                <button type="button" class="primary-button perimetro" onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
+                <button type="button" class="primary-button area" onclick="calcularAreaCirculo()">Calcular área</button>                
+            </div>
+            <div class="result">
+                <span id="resultadoCirculo" class="resultadoCirculo"> </span>
+            </div>
+        </article>
+        <article class="figura">
+            <div class="figura-datos">
+                <h3 id="anchorCuadrado">Triángulo isosceles</h3>
+                <a href="/"><div class="triangulo"></div></a>
+                <img src="" alt="">
+                <p>Cálculo de la altura de un triángulo isosceles</p>
+                <p>Introduce las unidades en centímetros</p>
+            </div>
+            <div class="figura-calculos">
+                <form action="" class="formIsosceles">
+                    <label for="ladoCuadrado">Lado 1</label>
+                    <label for="ladoCuadrado">Lado 2</label>
+                    <label for="baseIsosceles">base</label>
+                    <input type="number" id="ladoIsosceles1">
+                    <input type="number" id="ladoIsosceles2">
+                    <input type="number" id="baseIsosceles">
+                </form>
+            </div>
+            <div class="buttons">
+                <button type="button" class="primary-button perimetro" onclick="calcularAlturaIsosceles()">Calcular altura</button>
+            </div>
+            <div class="result">
+                <span id="resultadoIsosceles" class="resultadoTriangulo"> </span>
+            </div>
+        </article>
+    </section>
+    <footer class="footer">
+        
+    </footer>
+</body>
+</html>
