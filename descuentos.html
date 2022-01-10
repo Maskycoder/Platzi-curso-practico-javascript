@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentajes y descuentos | Curso práctico de JavaScript en Platzi</title>
-    <link rel="stylesheet" href="./figuras.css">
+    <link rel="stylesheet" href="./descuentos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
@@ -17,13 +17,13 @@
         <h1>Calculadora de porcentajes y descuentos</h1>
     </div>
     <section class="container">
-        <h2>Introduce el precio original y el descuento que hay que aplicar</h2>
-        <form action="">
+        <h2>Introduce el precio original y el descuento</h2>
+        <form action="" class="calculator">
             <label for="precioOriginal">Precio del producto</label>
             <input type="number" id="precioOriginal">
             <label for="descuento">Descuento a aplicar</label>
             <input type="number" id="descuento">
-            <button type="button" class="calcular" onclick="calcularPrecioConDescuento()">Calcular</button>
+            <button type="button" class="primary-button" onclick="calcularPrecioConDescuento()">Calcular</button>
         </form>
         <div class="resultado">
             <span id="precioFinal"></span>
