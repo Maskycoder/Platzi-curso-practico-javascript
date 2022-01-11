@@ -28,11 +28,6 @@ function precioFinal(precioOriginal, descuento){
     return (precioOriginal * calcularDescuento(descuento)/100);
 }
 
-// Validar si existe el cupón
-function validarCupon(cupon) {
-    return coupon.name === cupon;
-}
-
 // integración con HTML
 function calcularPrecioConDescuento() {
     const inicial = parseFloat(document.getElementById("precioOriginal").value);
