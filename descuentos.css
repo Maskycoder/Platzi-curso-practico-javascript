@@ -56,6 +56,14 @@ body{
     justify-content: space-between;
     color: var(--white);
 }
+.calculator input{
+    height: 30px;
+    text-align: center;
+    font-size: var(--lg);
+}
+.calculator p{
+    font-size: var(--sm);
+}
 
 .primary-button{
     background-color: var(--success);

@@ -24,6 +24,10 @@
             <label for="descuento">Descuento a aplicar</label>
             <input type="number" id="descuento">
             <button type="button" class="primary-button" onclick="calcularPrecioConDescuento()">Calcular</button>
+            <label for="cupon">¿Tienes un cupón?</label>
+            <input type="text" id="cupon">
+            <p>('enero', 'verano', 'blackfriday', 'navidad')</p>
+            <button type="button" class="primary-button" onclick="calcularPrecioConCupon()">Calcular descuento + cupón</button>
         </form>
         <div class="resultado">
             <span id="precioFinal"></span>
